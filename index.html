@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 20</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                Leyenda de las cinco águilas blancas
+                <br><br>
+                Cinco águilas blancas volaban un día por el azul del firmamento; cinco águilas blancas enormes, cuyos cuerpos resplandecientes producían sombras errantes sobre los cerros y montañas.<br><br>
+                ¿Venían del Norte? ¿Venían del Sur? La tradición indígena sólo dice que las cinco águilas blancas vinieron del cielo estrellado en una época muy remota.<br><br>
+                Eran aquellos los días de Caribay, la genio de los bosques aromáticos, primera mujer entre los indios Mirripuyes, habitantes de los Andes empinados.<br><br>
+                Era la hija del ardiente Zuhé (sol) y la pálida Chía (luna); remedaba el canto de los pájaros, corría ligera sobre el césped como el agua cristalina, y jugaba como el viento con las flores y los árboles.<br><br>
+                Caribay vio volar por el cielo las enormes águilas blancas, cuyas plumas brillaban a la luz del sol como láminas de plata, y quiso adornar su coraza con tan raro y espléndido plumaje.<br><br>
+                Corrió sin descanso tras las sombras errantes que las aves dibujaban en el suelo; salvó los profundos valles; subió a un monte y otro monte; llegó, al fin, fatigada a la cumbre solitaria de las montañas andinas. Las pampas, lejanas e inmensas, se divisaban por un lado; y por el otro, una escala ciclópea, jaspeaba de gris y esmeralda, la escala que formaban los montes, iba por la onda azul del Coquivacoa.<br><br>
+                Las águilas blancas se levantaron, perpendicularmente sobre aquella altura hasta perderse en el espacio. No se dibujaron más sus sombras sobre la tierra.<br><br>
+                Entonces Caribay pasó de un risco a otro por las escarpadas sierras, regando el suelo con sus lágrimas. Invocó a Zuhé, el astro rey, y el viento se llevó sus voces. Las águilas se habían perdido de vista, y el sol se hundía ya en el Ocaso.<br><br>
+                Aterida de frío, volvió sus ojos al Oriente, e invocó a Chía, la pálida luna; y al punto se detuvo el viento para hacer silencio. Brillaron las estrellas, y un vago resplandor en forma de semicírculo se dibujó en el horizonte.<br><br>
+                Caribay rompió el augusto silencio de los páramos con un grito de admiración. La luna había aparecido, y en torno de ella volaban las cinco águilas blancas refulgentes y fantásticas. Y en tanto que las águilas descendían majestuosamente, la genio de los bosques aromáticos, la india mitológica de los Andes moduló dulcemente sobre la altura su selvático cantar.<br><br>
+                Las misteriosas aves revolotearon por encima de las crestas desnudas de la cordillera, y se sentaron al fin, cada una sobre un risco, clavando sus garras en la viva roca; y se quedaron inmóviles, silenciosas, con las cabezas vueltas hacia el Norte, extendidas las gigantescas alas en actitud de remontarse nuevamente al firmamento azul.<br><br>
+                Caribay quería adornar su coraza con aquel plumaje raro y espléndido, y corrió hacia ellas para arrancarles las codiciadas plumas, pero un frío glacial entumeció sus manos: las águilas estaban petrificadas, convertidas en cinco masas enormes de hielo.<br><br>
+                Caribay da un grito de espanto y huye despavorida. Las águilas blancas eran un misterio, pero no un misterio pavoroso. La luna oscurece de pronto, golpea el huracán con siniestro ruido los desnudos peñascos, y las águilas blancas se despiertan.<br><br>
+                Erizadas furiosas, y a medida que sacuden sus monstruosas alas el suelo se cubre de copos de nieve y la montaña toda se engalana con el plumaje blanco.<br><br>
+                Este es el origen fabuloso de las Sierras Nevadas de Mérida.<br><br>
+                Las cinco águilas blancas de la tradición indígena son los cinco elevados riscos siempre cubiertos de nieve.<br><br>
+                Las grandes y tempestuosas nevadas son el furioso despertar de las águilas; y el silbido del viento en esos días de páramo es el remedo del canto triste y monótono de Caribay, y el mito hermoso de los Andes de Venezuela.<br><br>
+                Cuento breve, Tulio Febres Cordero - Recomendado por Miguel Diez R.
+            </p>
+
+                                 
+                         
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
